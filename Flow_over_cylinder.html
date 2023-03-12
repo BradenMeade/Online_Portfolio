@@ -2,30 +2,307 @@
 
 <html>
 
-<!--Header and navigation bar-->
-<div class="header">
+<!--Meta parameters-->
+<head>
 
-    <h1>Braden Meade</h1>
+    <meta charset="utf-8">
 
-    <p>Mechanical & Aerospace Engineering</p>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
 
-    <div class="topnav">
+    <title>Projects</title>
 
-        <a class="active" href="index.html">Home</a>
-      
-        <a href="projects.html">My Projects</a>
-      
-        <div class="topnav-right">
-      
-          <a href="contact.html">Contact Me</a>
-      
+    <link rel="stylesheet" href="Flow_over_cylinder.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<!--Header block-->
+<header>
+
+    <h1>William B. Meade</h1>
+
+    <div>
+
+        <div class="mark_left">
+
+            Mechanical & Aerospace Engineering
+
         </div>
-      
-      </div>
 
+        <div class="mark_right">
+
+            de Kentucky, ad Astra
+
+        </div>
+
+    </div>
+
+</header>
+
+<!--Interpage top navigation bar-->
+<div class = "topnav" id="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="projects.html">My Projects</a>
+
+    <a class = "active" href="#">Potential Flow over Cylinder</a>
+
+    <div class="topnav-right" id="navbar">
+      
+        <a href="contact.html">GitHub</a>
+
+        <a href="#" style="background-color:#0072b1;">LinkedIn</a>
+      
+    </div>
+    
 </div>
 
 
+<!--Javascipt for sticky navigation bar-->
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+
+      if (window.pageYOffset >= sticky) {
+
+        navbar.classList.add("sticky")
+
+      } else {
+
+        navbar.classList.remove("sticky");
+
+      }
+    }
+
+</script>
 
 
-</html>
+<!-- Intrapage sidebar navigation -->
+
+<div class="sidenav">
+
+    <h3>Contents</h3>
+
+    <hr>
+
+    <a href="#introduction">Introduction</a>
+
+    <a href="#mathgov">Mathematical Governance</a>
+
+    <a href="#scalarpot">Scalar Potential</a>
+
+    <a href="#reimann">Cauchy Riemann</a>
+
+    <div class="vl"></div>
+
+</div>
+
+<br><br><br>
+
+<!--Begin content-->
+
+<body>
+
+    <h1>
+
+        Introduction
+
+    </h1>
+
+
+    <p>
+        
+        poo
+        
+    </p>
+
+    <h1>
+
+        Mathematical Governance & Preliminaries
+
+    </h1>
+
+    \[
+        
+        \nabla\times\vec{V} = \left({\frac{\partial V_z}{\partial y}-\frac{\partial V_y}{\partial z}}\right)
+    
+    
+    \]
+
+    <h1>
+
+        Uniform & Steady Flow
+
+    </h1>
+
+    <p>
+
+
+
+    </p>
+
+
+    <div>
+    
+        <img src="Images/uniflow_pot.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Scalar potential field for a uniform and steady flow
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <p>
+        
+        poo
+        
+    </p>
+
+    <div>
+    
+        <img src="Images/uniflow_vel.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Image
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <p>
+        
+        poo
+        
+    </p>
+
+    <div>
+    
+        <img src="Images/stat_cylinder.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Image
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <p>
+        
+        \[
+            
+        \psi = U_{\infty}\sin\left(\theta\right)\left(r-\frac{R^2}{r}\right)
+    
+        \]
+        
+    </p>
+
+    <div>
+    
+        <img src="Images/stat_cylinder.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Image
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <p>
+        
+        poo
+        
+    </p>
+
+    <div>
+    
+        <img src="Images/stat_cylinder.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Image
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Scalar Potential functions-->
+
+    <a name="scalarpot"></a>  <!--Intrapage navigation-->
+
+    <h1>
+
+        Scalar Potential Functions
+
+    </h1>
+
+    <p>
+        
+        scalar potential functions
+        
+    </p>
+
+    <div>
+    
+        <img src="Images/stat_cylinder.jpg" alt="none">
+
+        <div class="figure_caption">
+
+            <p>
+
+                <b>Figure 1</b> - Image
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        Sources and sinks are mathematical entities that characterize a radial flow either outward from or into a singular point (hence the respective source and sink naming convention). From the cylindrical definition of the velocity vector, given as
+    </p>
+
+
+
+
+</body>
+
+
+
+
+

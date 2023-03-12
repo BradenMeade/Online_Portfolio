@@ -2,61 +2,236 @@
 
 <html>
 
+<!--Meta parameters-->
+
 <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+    <title>Projects</title>
 
     <link rel="stylesheet" href="projects.css">
 
 </head>
 
-<!--Header and navigation bar-->
-<div class="header">
+<!--End meta parameters-->
 
-    <h1>Braden Meade</h1>
+<!--Typical header/navigation block for all pages-->
+<header>
 
-    <p>Mechanical & Aerospace Engineering</p>
+    <h1>William B. Meade</h1>
 
-    <div class="topnav">
+    <div>
 
-        <a href="index.html">Home</a>
-      
-        <a class = "active" href="projects.html">My Projects</a>
-      
-        <div class="topnav-right">
-      
-          <a href="contact.html">Contact Me</a>
-      
+        <div class="mark_left">
+
+            Mechanical & Aerospace Engineering
+
         </div>
+
+        <div class="mark_right">
+
+            de Kentucky, ad Astra
+
+        </div>
+
+    </div>
+
+</header>
+
+<!--Interpage top navigation bar-->
+<div class = "topnav" id="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a class = "active" href="projects.html">My Projects</a>
+
+
+    <div class="topnav-right" id="navbar">
       
-      </div>
+        <a href="contact.html">GitHub</a>
+
+        <a href="#" style="background-color:#0072b1;">LinkedIn</a>
+      
+    </div>
+    
+</div>
+
+
+<!--Javascipt for sticky navigation bar-->
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+
+      if (window.pageYOffset >= sticky) {
+
+        navbar.classList.add("sticky")
+
+      } else {
+
+        navbar.classList.remove("sticky");
+
+      }
+    }
+
+</script>
+
+
+<!-- Intrapage sidebar navigation -->
+
+<div class="sidenav">
+
+    <h3>Projects</h3>
+
+    <hr>
+
+    <a href="#introduction">Potential Flow over Cylinder</a>
+
+    <a href="#mathgov">Mandelbrot & Julia Sets</a>
+
+    <a href="#scalarpot">Stress Concentration Factors</a>
+
+    <a href="#reimann">Cauchy Riemann</a>
+
+    <div class="vl"></div>
 
 </div>
 
+
+<!--Begin project 1-->
 
 <div class="flow_over_cylinder">
     
-    <a href="Flow over cylinder/Flow_over_cylinder.html"><h4>Mathematical Development of Potential Flow over Cylinder - MATLAB</h4></a>
+    <a href="Flow_over_cylinder.html">
+        
+        <div>
 
-    <div>
+        <h4>Mathematical Development of Potential Flow over Cylinder - MATLAB</h4>
 
         <p> To develop a model of potential flow over a cylinder establishing constituent mathematical concepts and building upon them until the desired results are achieved</p>
 
+        <div>
+
+            <img src="Images/stat_cylinder.jpg" alt="Image not found">
+
+            <img src="Images/rotating_cylinder.jpg" alt="">
+
+        </div>
+
     </div>
 
-    <div>
-
-        <img src="Images/stat_cylinder.jpg" alt="Image not found">
-
-        <img src="Images/7.jpg" alt="">
-
-    </div>
+    </a>
 
 </div>
 
-<div class="stress_concentration"> 
+<!--End project 1-->
+<hr>
 
-    <a href=""><h4>Stress concentration factors for various plate loadings</h4></a>
+
+<div class="fractals">
     
+    <a href="">
+        
+        <div>
+
+        <h4>Mathematical Development of Potential Flow over Cylinder - MATLAB</h4>
+
+        <p> To develop a model of potential flow over a cylinder establishing constituent mathematical concepts and building upon them until the desired results are achieved</p>
+
+        <div>
+
+            <img src="Images/fig_high.jpg" alt="Image not found">
+
+            <img src="Images/set1.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    </a>
+
 </div>
+
+<hr>
+
+<div class="flow_over_cylinder">
+    
+    <a href="Flow_over_cylinder.html">
+        
+        <div>
+
+        <h4>Mathematical Development of Potential Flow over Cylinder - MATLAB</h4>
+
+        <p> To develop a model of potential flow over a cylinder establishing constituent mathematical concepts and building upon them until the desired results are achieved</p>
+
+        <div>
+
+            <img src="Images/stat_cylinder.jpg" alt="Image not found">
+
+            <img src="Images/rotating_cylinder.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    </a>
+
+</div>
+
+<hr>
+
+<div class="flow_over_cylinder">
+    
+    <a href="Flow_over_cylinder.html">
+        
+        <div>
+
+        <h4>Mathematical Development of Potential Flow over Cylinder - MATLAB</h4>
+
+        <p> To develop a model of potential flow over a cylinder establishing constituent mathematical concepts and building upon them until the desired results are achieved</p>
+
+        <div>
+
+            <img src="Images/stat_cylinder.jpg" alt="Image not found">
+
+            <img src="Images/rotating_cylinder.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    </a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </html>
